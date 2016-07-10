@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css"></link>
+    <link rel="stylesheet" href="./imprint.css"></link>
+    <title>Meredith M. Alongi</title>
+  </head>
+  <script>
+	var texts = ["Need to reach me?", "Sie muessen mich erreichen?"];
+	var offs  = 0;
+	var cur   = texts[offs];
+	var pos   = 0;
+	var forw  = true;
+  	setInterval(function() {
+	  var el = document.getElementById("typewrite");
+
+	  if (forw) {
+	    if (pos >= cur.length) {
+	      offs += 1;
+	      cur = texts[offs % texts.length];
+	      forw = false;
+	    } else {
+	      el.innerHTML += cur[pos];
+	      pos += 1;
+	    }
+	  } else {
+	    if (pos == 0) {
+	      forw = true;
+	    } else {
+	      pos -= 1;
+	      el.innerHTML = el.innerHTML.substring(0, pos);
+	    }
+          }
+        }, 100);
+   </script>
+  <body>
+    <div class="content">
+      <div class="txt">
+        <h1 id="typewrite"></h1>
+	<p class="font-size-normal">Responsible for content:</p>
+	<div class="a-tad-right smaller-fonts let-me-breathe">
+	  <p class="no-p-spacing">Meredith Michael Alongi</p>
+	  <p class="no-p-spacing">Spreestrasse 26</p>
+	  <p>12439 Berlin</p>
+	  <p class="no-p-spacing">Shoot me an email: meredith at malongi dot com</p>
+        </div>
+	<p class="font-size-normal">Responsible for design and engineering:</p>
+	<div class="a-tad-right smaller-fonts">
+	  <p class="no-p-spacing">Veit Heller</p>
+	  <p class="no-p-spacing">Spreestrasse 26</p>
+	  <p>12439 Berlin</p>
+	  <p>You talkin' to me: veit at veitheller dot de</p>
+	</div>
+	<a class="text-center buttonish-link" href="./">Cool, now send me back!</a>
+      </div>
+    </div>
+  </body>
+</html>

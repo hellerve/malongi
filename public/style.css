@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'charterregular';
+    src: url('webfonts/charter_regular-webfont.eot');
+    src: url('webfonts/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  font-family: "charterregular";
+  font-weight: 100;
+  font-size: 16px;
+  margin: 0;
+  background-color: #ddf;
+}
+body {
+  margin: 0;
+}
+h1, h3 {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+h3{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+span {
+  font-size: 1rem;
+}
+.content {
+  padding-top: 25vh;
+  padding-bottom: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 40rem;
+  min-width: 30rem;
+  min-height: 80vh;
+}
+.txt {
+  width: 33vw;
+  font-size: 1.3rem;
+}
+#contact {
+  padding-bottom: 30vh;
+}
+#landing {
+  text-align: justify
+}
+input {
+  max-width: 20rem;
+}
+input, textarea {
+  font-family: sans-serif;
+  display: block;
+  margin-bottom: 1em;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  max-width: 30rem;
+  font-size: 1rem;
+  border: 2px solid;
+  border-color: darkgrey black black grey;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+}
+textarea {
+  width: 500px;
+  font-family: sans-serif;
+  min-height: 8rem;
+  font-size: 18px;
+  resize: none;
+}
+input[type=submit]{
+  width: 150px;
+  margin-left: 340px;
+  padding: 0.2em;
+}
+input[type=submit]:hover{
+  background-color: #fff;
+}
+.resume-item {
+  padding-bottom: 0.5em;
+}
+.resume-item-txt {
+  font-size: 1rem;
+}
+.no-breather {
+  margin-bottom: 0;
+}
+.a-tad-right {
+  padding-left: 1em;
+}
+.right {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  width: 7rem;
+}
+.whole-width {
+  width: 100vw;
+}
+.not-quite-bottom {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: rgba(100,100,100,0.1);     
+}
+.note {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #444;
+  margin: 0;
+}
+.note a {
+  color: #888;
+}
+#fade-img {
+  float: right;
+  height: 225px;
+}
+.breather {
+  margin-bottom: 2em;
+}
+.buttonish-link {
+  color: #000;
+  border: 3px solid;
+  padding: 5px;
+  width: 200px;
+  margin: 1em;
+}
+.buttonish-link:hover {
+  color: #afd;
+  background-color: #000;
+}
