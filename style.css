@@ -63,38 +63,6 @@ span {
 #landing {
   text-align: justify
 }
-input {
-  max-width: 20rem;
-}
-input, textarea {
-  font-family: sans-serif;
-  display: block;
-  margin-bottom: 1em;
-  font-size: 16px;
-  color: black;
-  width: 100%;
-  max-width: 30rem;
-  font-size: 1rem;
-  border: 2px solid;
-  border-color: darkgrey black black grey;
-  padding: 0.4rem 0.8rem;
-  margin-bottom: 1rem;
-}
-textarea {
-  width: 500px;
-  font-family: sans-serif;
-  min-height: 8rem;
-  font-size: 18px;
-  resize: none;
-}
-input[type=submit]{
-  width: 150px;
-  margin-left: 340px;
-  padding: 0.2em;
-}
-input[type=submit]:hover{
-  background-color: #fff;
-}
 .resume-item {
   padding-bottom: 0.5em;
 }
